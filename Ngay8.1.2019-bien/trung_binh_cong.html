@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyen Van Khanh</title>
+</head>
+<body>
+	<h1>Trung Bình Cộng</h1>
+	<input type="number" placeholder="Nhập môn vật lý" id="vatly">
+	<input type="number" placeholder="Nhập môn hóa học" id="hoahoc">
+	<input type="number" placeholder="Nhập môn sinh học" id="sinhhoc">
+	<p id="ketqua"></p>
+	<button onclick="submit()">Tính</button>
+	<script type="text/javascript">
+		function submit(){
+			var _vatLy = parseInt(document.getElementById('vatly').value);
+			var _sinhHoc = parseInt(document.getElementById('hoahoc').value);
+			var _hoaHoc = parseInt(document.getElementById('sinhhoc').value);
+			var diemTB = (_vatLy + _sinhHoc + _hoaHoc)/3;
+			document.getElementById("ketqua").innerHTML = "Điểm trung bình = " + diemTB;
+
+		}
+	</script>
+</body>
+</html>

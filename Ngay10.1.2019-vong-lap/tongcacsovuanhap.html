@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="number" id="nhapso">
+	<p id="ketqua"></p>
+	<button onclick="submit();">Tính tổng</button>
+	<script type="text/javascript">
+		function submit(){
+		var num = parseInt(document.getElementById('nhapso').value);
+		var total = 0;
+		var i = 1;
+		for(i; i <= num; i = i + 1){
+		     total = total + i;
+		     document.getElementById("ketqua").innerHTML ="Kết quả =" + total;
+		}
+}
+	</script>
+</body>
+</html>

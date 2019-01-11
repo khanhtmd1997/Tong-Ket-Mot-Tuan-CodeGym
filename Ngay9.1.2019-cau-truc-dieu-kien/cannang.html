@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Cân nặng</th>
+			<th>Chiều cao</th>
+			<th>Kết quả</th>
+		</tr>
+		<tr>
+			<td><input type="number" id="cannang"></td>
+			<td><input type="number" id="chieucao"></td>
+			<td><button onclick="ketqua()">Kết quả</button></td>
+		</tr>
+	</table>
+	<h1 id="hienthi"></h1>
+	<script type="text/javascript">
+		function ketqua(){
+		var _cannang = parseInt(document.getElementById('cannang').value);
+		var _chieucao = parseInt(document.getElementById('chieucao').value);
+		var bmi = _cannang/_chieucao*2;
+		if (bmi >= 30) document.getElementById("hienthi").innerHTML ="Obese";
+			else if (bmi >= 25) document.getElementById("hienthi").innerHTML ="Overweight";
+				else if (bmi >= 18.5) document.getElementById("hienthi").innerHTML ="Normal";
+					else document.getElementById("hienthi").innerHTML ="Underweight";
+}
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyen Van Khanh</title>
+</head>
+<body>
+	<h1>Diện tích</h1>
+	<input type="number" placeholder="Nhập chiều dài" id="width">
+	<input type="number" placeholder="Nhập chiều rộng" id="height">
+	<p id="hienthi"></p>
+	<button onclick="submit()">Tính</button>
+	<script type="text/javascript">
+		function submit(){
+			var chieuDai = parseInt(document.getElementById("width").value);
+			var chieuRong = parseInt(document.getElementById("height").value);
+			var dienTich = chieuDai * chieuRong;
+			document.getElementById("hienthi").innerHTML = "Kết quả = " + dienTich;
+		}
+	</script>
+</body>
+</html>

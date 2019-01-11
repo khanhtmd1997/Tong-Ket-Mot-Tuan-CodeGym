@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyen Van Khanh</title>
+</head>
+<body>
+	<h1>Chuyển độ C sang độ F</h1>
+	<input type="number" placeholder="Nhập độ C" id="text">
+	<p id="ketqua"></p>
+	<button onclick="submit()">Chuyển độ</button>
+	<script type="text/javascript">
+		function submit(){
+		var c = parseInt(document.getElementById("text").value);
+			var f = (9*c)/5 + 32;
+			document.getElementById("ketqua").innerHTML = "Kết quả = " + f;
+			}
+	</script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyen Van Khanh</title>
+</head>
+<body>
+	<h1>Diện tích hình tròn</h1>
+	<input type="number" placeholder="Nhập bán kính" id="bankinh">
+	<p id="ketqua"></p>
+	<button onclick="submit()">Tính diện tính hình tròn</button>
+	<script type="text/javascript">
+		function submit(){
+			var pi = 3.14;
+			var r = parseInt(document.getElementById("bankinh").value);
+			var dientich = r*r*3.14;
+			document.getElementById("ketqua").innerHTML = "Kết quả = " + dientich;
+		}
+	</script>
+</body>
+</html>

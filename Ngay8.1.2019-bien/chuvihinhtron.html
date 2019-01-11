@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyen Van Khanh</title>
+</head>
+<body>
+	<h1>Chu vi hình tròn</h1>
+	<input type="number" placeholder="Nhập đường kính" id="duongkinh">
+	<p id="ketqua"></p>
+	<button onclick="submit()">Tính chu vi hình tròn</button>
+	<script type="text/javascript">
+		function submit(){
+			var pi = 3.14;
+			var d = parseInt(document.getElementById("duongkinh").value);
+			var chuvi = d*3.14;
+			document.getElementById("ketqua").innerHTML = "Kết quả = " + chuvi;
+		}
+	</script>
+</body>
+</html>

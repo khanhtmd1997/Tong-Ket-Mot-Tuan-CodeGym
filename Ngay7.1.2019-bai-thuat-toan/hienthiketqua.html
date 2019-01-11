@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyễn Văn Khánh</title>
+</head>
+<body>
+<h1 style="color: red;">Hàm alert -> trang mới</h1>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+ function showMessage(){
+     alert('Xin chào!');
+ }
+</script>
+<h1 style="color: green;">hiển thị với thẻ div (html) -> hiển thị trên dòng click me</h1>
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+ function showMessage(){
+     document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+ }
+</script>
+<h1 style="color: pink;">document.write -> ra 1 trang mới</h1>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+ function showMessage(){
+     document.write('Xin chào!');
+ }
+</script>
+<h1>console.log</h1>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+ function showMessage(){
+     console.log('Xin chào!');
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Máy tính</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css" >
+	<script type="text/javascript">
+		function cong2so(form){
+			a = eval(form.a.value)
+			b = eval(form.b.value)
+			c = a + b
+			form.kq.value = c
+		}
+		function tru2so(form){
+			a = eval(form.a.value)
+			b = eval(form.b.value)
+			c = a - b
+			form.kq.value = c
+		}
+		function nhan2so(form){
+			a = eval(form.a.value)
+			b = eval(form.b.value)
+			c = a * b
+			form.kq.value = c
+		}
+		function chia2so(form){
+			a = eval(form.a.value)
+			b = eval(form.b.value)
+			kq = eval(form.kq.value)
+			if(a!=0) c = a / b 
+			else alert("Cần nhập a khác 0"+form.kq.value)
+			form.kq.value = c
+		}
+	</script>
+</head>
+<body>
+	<form name="formx">
+		<div class="container">
+			<div class="maytinh">
+				<div class="title"><h4>Caculator</h4></div>
+				<div class="row">
+					<div class="col-md-4">
+						<input type="text" size="40" name="a">
+					</div>
+					<div class="col-md-4">
+						<input type="text" size="40"  name="b">
+					</div>
+					<div class="col-md-4">
+						<input type="text"  name="kq" disabled>
+					</div>
+					<div class="col-md-3">
+						<input type="button" value="Addition(+)" onclick="cong2so(this.form)">
+					</div>
+					<div class="col-md-3">
+						<input type="button" value="Addition(-)" onclick="tru2so(this.form)">
+					</div>
+					<div class="col-md-3">
+						<input type="button" value="Addition(x)" onclick="nhan2so(this.form)">
+					</div>
+					<div class="col-md-3">
+						<input type="button" value="Addition(/)" onclick="chia2so(this.form)">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</form>
+
+<script src="bootstrap4/js/jquery.min.js"></script>
+<script src="bootstrap4/js/bootstrap.min.js"></script> 	
+</body>
+</html>

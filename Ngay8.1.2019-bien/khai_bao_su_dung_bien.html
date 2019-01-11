@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyen Van Khanh</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i = 10;
+		var f = 20.5;
+		var b = true;
+		var s = "Hà Nội";
+		document.write ("i =" + i);
+		document.write ("<br/>");
+		document.write ("f =" +f);
+		document.write ("<br/>");
+		document.write ("b =" + b);
+		document.write ("<br/>");
+		document.write ("s =" + s);
+	</script>
+	<br>
+	<script type="text/javascript">
+		var width = 20;
+		var height = 10;
+		var area = width * height;
+		document.write("Area =" + area);
+	</script>
+	<br>
+	<br>
+	
+	<h1>Kiểm tra a có phải là bội của b</h1>
+	<input type="number" placeholder="Nhập a" id="a">
+	<input type="number" placeholder="Nhập b" id="b">
+	<p id="ketqua"></p>
+	<button onclick="submit()">Kết quả</button>
+	<script type="text/javascript">
+		function submit(){
+			var so_A = parseInt(document.getElementById("a").value);
+			var so_B = parseInt(document.getElementById("b").value);
+			if(so_A % so_B == 0) document.getElementById("ketqua").innerHTML = "a là bội chung của b";
+			else document.getElementById("ketqua").innerHTML = "a không phải là bội chung của b";
+		}
+	</script>
+</body>
+</html>

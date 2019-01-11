@@ -1,0 +1,15 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.bang{
+	margin-top: 200px;
+	margin-left: 400px;
+}
+.bang tr td button{
+	width: 50px;
+	height: 40px;
+}
+.bang tr td input{
+	width: 213px;
+}

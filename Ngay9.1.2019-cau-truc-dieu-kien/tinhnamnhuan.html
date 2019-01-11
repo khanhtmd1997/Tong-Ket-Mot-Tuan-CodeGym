@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var year = parseInt(prompt("Nhập vào 1 năm bất kỳ để kiểm tra"));
+		var isLeapYear = false;
+		if (year % 4 == 0){
+			if(year % 100 == 0){
+				if(year % 400 == 0){
+					isLeapYear = true;
+				}
+			}
+			else isLeapYear = true;
+		}
+		if(isLeapYear)
+			alert(year + " Năm nhuận nhé đồ ngốc");
+		else alert (year + " là 365 ngày nhé không có thêm ngày đâu");
+	</script>
+</body>
+</html>

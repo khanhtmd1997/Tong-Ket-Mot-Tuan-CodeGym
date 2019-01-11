@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 style="margin-left: 150px;">Good:<input type="checkbox" id="good" onclick="check()"></h1>
+	<img id="image" src="anh_good_cheap_1.jpg" style="display:none;width: 300px;height: 150px;margin-left: 300px;">
+	<h1 style="margin-left: 150px;">Fast:<input type="checkbox" id="fast" onclick="check()"></h1>
+	<img id="image1" src="anh_good_cheap_2.jpg" style="display:none;width: 300px;height: 150px;margin-left: 300px;">
+	<h1 style="margin-left: 150px;">Cheap:<input type="checkbox" id="cheap" onclick="check()"></h1>
+	<img id="image2" src="anh_good_cheap_3.jpg" style="display:none;width: 300px;height: 150px;margin-left: 300px;">
+	<script type="text/javascript">
+		function check() {
+		  	var checkBox1 = document.getElementById("good");
+		  	var checkBox2 = document.getElementById("fast");
+		  	var checkBox3 = document.getElementById("cheap");
+		  	var img = document.getElementById("image");
+		  	var img1 = document.getElementById("image1");
+		  	var img2 = document.getElementById("image2");
+		  	if (checkBox1.checked != true)
+		    	img.style.display = "none";
+		  	else 
+		    	img.style.display = "block";
+		    if (checkBox2.checked != true) img1.style.display ="none";
+		    else img1.style.display = "block";
+		    if (checkBox3.checked != true) img2.style.display ="none";
+		    else img2.style.display = "block";
+		}
+	</script>
+</body>
+</html>
